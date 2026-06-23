@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Defining global theme color variables for convenience */
+  --bg-primary: #030712; /* Deep gray-950 base */
+  --accent-cyan: #22d3ee; /* Tailwind cyan-400 */
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: var(--bg-primary);
+  color: #ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Fluid responsive smooth scroll orchestration */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom premium selection highlights matched globally */
+::selection {
+  background-color: rgba(34, 211, 238, 0.2); /* Soft cyan opacity glow */
+  color: #22d3ee; /* Sharp cyan text on cursor selection */
+}
+
+/* Minimalist Cyberpunk Track Scrollbars for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712; /* Deep base track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937; /* Gray-800 scroll slider */
+  border-radius: 9999px;
+  border: 2px solid #030712;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151; /* Gray-700 on scroll hover activity */
+}
