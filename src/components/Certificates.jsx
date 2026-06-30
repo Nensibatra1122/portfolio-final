@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
-// Absolute imported paths matching your exact local directory assets structure from image_093339.jpg
-import ncaiCert from '../assets/ncai-internship-cert.jpeg'; // Verify if it has extension issues
-import ncaiAward from '../assets/ncai-award-ceremony.jpeg'; // Matched perfectly
-import ncaiPic from '../assets/ncai-achievement-pic.jpeg'; // Matched perfectly
-import ncaiGroup from '../assets/ncai-internship-group.jpeg'; // Matched perfectly
-import googleIOCert from '../assets/google-io-extended-karachi-ai.jpeg'; 
-import unileverEng from '../assets/unilever-engineering-possibilities.PNG';
-import ibmMLCert from '../assets/ibm-coursera-machine-learning.PNG';
-import codingArenaTop from '../assets/it-club-coding-arena-top-scorer.PNG';
+// --- SECTION 1: RESEARCH LABS & BENCHMARKS (NCAI & FYP) ---
+import ncaiCert from '../assets/ncai-internship-cert.jpeg'; 
+import ncaiAward from '../assets/ncai-award-ceremony.jpeg'; 
+import ncaiPic from '../assets/ncai-achievement-pic.jpeg'; 
+import ncaiGroup from '../assets/ncai-internship-group.jpeg';
 import smartCityCert from '../assets/ncai-smart-city-internship.jpeg';
-import oasisDataSci from '../assets/oasis-infobyte-data-science.PNG';
-import codsoftWebDev from '../assets/codsoft-web-development.PNG';
+import fypPresentation from '../assets/fyp-team-presentation.png';
 
-// FIXING TYPOS BASED ON YOUR WINDOWS EXPLORER FILENAMES SCREENSHOT:
-import datacampSQLIntermediate from '../assets/datacamp-intermediate-sql.PNG'; // File on disk is 'datacamp-intermediate-sql.png'
-import datacampSQLJoining from '../assets/datacamp-joining-data-sql.PNG'; // File on disk is 'datacamp-joining-data-sql.png'
-import greatLearningML from '../assets/great-learning-ml-algorithms.PNG'; // File on disk is 'great-learning-ml-algorithms.png'
-import navttcML from '../assets/navttc-machine-learning.jpeg'; // File on disk is 'navttc-machine-learning.jpg'
-import technerdsPython from '../assets/technerds-python-workshop.jpeg'; // File on disk is 'technerds-python-workshop.jpg'
-import aicpDataSci from '../assets/aicp-data-science-ai.jpeg'; // File on disk is 'aicp-data-science-ai.jpg'
+// --- SECTION 2: SPECIALIZED DATA SCIENCE & ALGORITHMIC VALIDATIONS ---
+import ibmMLCert from '../assets/ibm-coursera-machine-learning.PNG'; 
+import greatLearningML from '../assets/great-learning-ml-algorithms.png'; 
+import navttcML from '../assets/navttc-machine-learning.jpeg'; 
+import oasisDataSci from '../assets/oasis-infobyte-data-science.png';
+import technerdsPython from '../assets/technerds-python-workshop.jpeg'; 
+
+// --- SECTION 3: DATABASES & ENTERPRISE WEB ENGINEERING ---
+import datacampSQLIntermediate from '../assets/datacamp-intermediate-sql.png'; 
+import datacampSQLJoining from '../assets/datacamp-joining-data-sql.png'; 
+import codsoftWebDev from '../assets/codsoft-web-development.png';
+import codingArenaTop from '../assets/it-club-coding-arena-top-scorer.PNG'; 
+
+// --- SECTION 4: GLOBAL CORPORATE PROGRAMS & COMMUNITY SUMMITS ---
+import unileverEng from '../assets/unilever-engineering-possibilities.PNG'; 
+import googleIOCert from '../assets/google-io-extended-karachi-ai.jpeg'; 
+import aicpDataSci from '../assets/aicp-data-science-ai.jpeg';
+
 
 const certificates = [
-  // --- SECTION 1: RESEARCH LABS & BENCHMARKS (NCAI) ---
+  // --- SECTION 1: RESEARCH LABS & BENCHMARKS (NCAI & FYP) ---
   { 
     title: "Research Internship Certificate (Diabetic Retinopathy) - NCAI Neurocomputation Lab", 
     image: ncaiCert,
@@ -53,6 +59,12 @@ const certificates = [
     image: smartCityCert,
     tag: "Research",
     color: "from-purple-500/20 to-purple-500/5 text-purple-400 border-purple-500/30"
+  },
+  { 
+    title: "Autonomous Cleaning Robot (CLAIR) - Final Year Project Team Presentation", 
+    image: fypPresentation,
+    tag: "Engineering",
+    color: "from-indigo-500/20 to-indigo-500/5 text-indigo-400 border-indigo-500/30"
   },
 
   // --- SECTION 2: SPECIALIZED DATA SCIENCE & ALGORITHMIC VALIDATIONS ---

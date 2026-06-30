@@ -83,6 +83,37 @@ export default function Projects() {
           ))}
         </div>
 
+        {/* --- NEW: VIEW MORE ON GITHUB BUTTON --- */}
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="mt-16 flex justify-center"
+        >
+          <a 
+            href="https://github.com/Nensibatra1122" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gray-900 border border-gray-800 hover:border-cyan-500/50 text-sm font-semibold tracking-wide text-gray-200 hover:text-white transition-all duration-300 shadow-xl backdrop-blur-sm overflow-hidden"
+          >
+            {/* Ambient Background Glow Effect on Hover */}
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            
+            <span>View More on GitHub</span>
+            
+            {/* Animated Arrow Icon */}
+            <svg 
+              className="w-4 h-4 text-gray-400 group-hover:text-cyan-400 transform group-hover:translate-x-1 transition-transform duration-300" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </motion.div>
+
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const links = [
   { href: '#hero', label: 'Home' }, // Linked directly back to the top hero layout
-  { href: '#gallery', label: 'Achievements' },
+  { href: '#certificates', label: 'Certifications' },
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
